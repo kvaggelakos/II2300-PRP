@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ED5312A14855E8E00510423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5312914855E8E00510423 /* UIKit.framework */; };
+		2ED5312C14855E8E00510423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5312B14855E8E00510423 /* Foundation.framework */; };
+		2ED5312E14855E8E00510423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5312D14855E8E00510423 /* CoreGraphics.framework */; };
+		2ED5313414855E8E00510423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5313214855E8E00510423 /* InfoPlist.strings */; };
+		2ED5313614855E8E00510423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313514855E8E00510423 /* main.m */; };
+		2ED5313A14855E8E00510423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313914855E8E00510423 /* AppDelegate.m */; };
+		2ED5313D14855E8E00510423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313C14855E8E00510423 /* ViewController.m */; };
+		2ED5314014855E8E00510423 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5313E14855E8E00510423 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2ED5312514855E8E00510423 /* II2300-PRP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "II2300-PRP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED5312914855E8E00510423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2ED5312B14855E8E00510423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2ED5312D14855E8E00510423 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2ED5313114855E8E00510423 /* II2300-PRP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "II2300-PRP-Info.plist"; sourceTree = "<group>"; };
+		2ED5313314855E8E00510423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ED5313514855E8E00510423 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2ED5313714855E8E00510423 /* II2300-PRP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "II2300-PRP-Prefix.pch"; sourceTree = "<group>"; };
+		2ED5313814855E8E00510423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2ED5313914855E8E00510423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2ED5313B14855E8E00510423 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2ED5313C14855E8E00510423 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2ED5313F14855E8E00510423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ED5312214855E8E00510423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED5312A14855E8E00510423 /* UIKit.framework in Frameworks */,
+				2ED5312C14855E8E00510423 /* Foundation.framework in Frameworks */,
+				2ED5312E14855E8E00510423 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ED5311A14855E8E00510423 = {
+			isa = PBXGroup;
+			children = (
+				2ED5312F14855E8E00510423 /* II2300-PRP */,
+				2ED5312814855E8E00510423 /* Frameworks */,
+				2ED5312614855E8E00510423 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2ED5312614855E8E00510423 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ED5312514855E8E00510423 /* II2300-PRP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ED5312814855E8E00510423 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ED5312914855E8E00510423 /* UIKit.framework */,
+				2ED5312B14855E8E00510423 /* Foundation.framework */,
+				2ED5312D14855E8E00510423 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ED5312F14855E8E00510423 /* II2300-PRP */ = {
+			isa = PBXGroup;
+			children = (
+				2ED5313814855E8E00510423 /* AppDelegate.h */,
+				2ED5313914855E8E00510423 /* AppDelegate.m */,
+				2ED5313B14855E8E00510423 /* ViewController.h */,
+				2ED5313C14855E8E00510423 /* ViewController.m */,
+				2ED5313E14855E8E00510423 /* ViewController.xib */,
+				2ED5313014855E8E00510423 /* Supporting Files */,
+			);
+			path = "II2300-PRP";
+			sourceTree = "<group>";
+		};
+		2ED5313014855E8E00510423 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ED5313114855E8E00510423 /* II2300-PRP-Info.plist */,
+				2ED5313214855E8E00510423 /* InfoPlist.strings */,
+				2ED5313514855E8E00510423 /* main.m */,
+				2ED5313714855E8E00510423 /* II2300-PRP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ED5312414855E8E00510423 /* II2300-PRP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ED5314314855E8E00510423 /* Build configuration list for PBXNativeTarget "II2300-PRP" */;
+			buildPhases = (
+				2ED5312114855E8E00510423 /* Sources */,
+				2ED5312214855E8E00510423 /* Frameworks */,
+				2ED5312314855E8E00510423 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "II2300-PRP";
+			productName = "II2300-PRP";
+			productReference = 2ED5312514855E8E00510423 /* II2300-PRP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ED5311C14855E8E00510423 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = fsefsef;
+			};
+			buildConfigurationList = 2ED5311F14855E8E00510423 /* Build configuration list for PBXProject "II2300-PRP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2ED5311A14855E8E00510423;
+			productRefGroup = 2ED5312614855E8E00510423 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ED5312414855E8E00510423 /* II2300-PRP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ED5312314855E8E00510423 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED5313414855E8E00510423 /* InfoPlist.strings in Resources */,
+				2ED5314014855E8E00510423 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ED5312114855E8E00510423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED5313614855E8E00510423 /* main.m in Sources */,
+				2ED5313A14855E8E00510423 /* AppDelegate.m in Sources */,
+				2ED5313D14855E8E00510423 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2ED5313214855E8E00510423 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ED5313314855E8E00510423 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2ED5313E14855E8E00510423 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ED5313F14855E8E00510423 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ED5314114855E8E00510423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2ED5314214855E8E00510423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ED5314414855E8E00510423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "II2300-PRP/II2300-PRP-Prefix.pch";
+				INFOPLIST_FILE = "II2300-PRP/II2300-PRP-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2ED5314514855E8E00510423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "II2300-PRP/II2300-PRP-Prefix.pch";
+				INFOPLIST_FILE = "II2300-PRP/II2300-PRP-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ED5311F14855E8E00510423 /* Build configuration list for PBXProject "II2300-PRP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ED5314114855E8E00510423 /* Debug */,
+				2ED5314214855E8E00510423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ED5314314855E8E00510423 /* Build configuration list for PBXNativeTarget "II2300-PRP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ED5314414855E8E00510423 /* Debug */,
+				2ED5314514855E8E00510423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ED5311C14855E8E00510423 /* Project object */;
+}
