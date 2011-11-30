@@ -26,8 +26,8 @@
 		2ED5313314855E8E00510423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2ED5313514855E8E00510423 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ED5313714855E8E00510423 /* II2300-PRP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "II2300-PRP-Prefix.pch"; sourceTree = "<group>"; };
-		2ED5313814855E8E00510423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2ED5313914855E8E00510423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2ED5313814855E8E00510423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "II2300-PRP/AppDelegate.h"; sourceTree = "<group>"; };
+		2ED5313914855E8E00510423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "II2300-PRP/AppDelegate.m"; sourceTree = "<group>"; };
 		F42A0E6A14862FA7008BD272 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F42A0E6B14862FA7008BD272 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F42A0E6E14862FAE008BD272 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -50,7 +50,11 @@
 		2ED5311A14855E8E00510423 = {
 			isa = PBXGroup;
 			children = (
-				2ED5312F14855E8E00510423 /* II2300-PRP */,
+				2ED5313814855E8E00510423 /* AppDelegate.h */,
+				2ED5313914855E8E00510423 /* AppDelegate.m */,
+				F42A0E6914862FA7008BD272 /* Controllers */,
+				F42A0E6D14862FAE008BD272 /* Views */,
+				2ED5313014855E8E00510423 /* Supporting Files */,
 				2ED5312814855E8E00510423 /* Frameworks */,
 				2ED5312614855E8E00510423 /* Products */,
 			);
@@ -74,18 +78,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2ED5312F14855E8E00510423 /* II2300-PRP */ = {
-			isa = PBXGroup;
-			children = (
-				2ED5313814855E8E00510423 /* AppDelegate.h */,
-				2ED5313914855E8E00510423 /* AppDelegate.m */,
-				F42A0E6914862FA7008BD272 /* Controllers */,
-				F42A0E6D14862FAE008BD272 /* Views */,
-				2ED5313014855E8E00510423 /* Supporting Files */,
-			);
-			path = "II2300-PRP";
-			sourceTree = "<group>";
-		};
 		2ED5313014855E8E00510423 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +87,7 @@
 				2ED5313714855E8E00510423 /* II2300-PRP-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = "II2300-PRP";
 			sourceTree = "<group>";
 		};
 		F42A0E6914862FA7008BD272 /* Controllers */ = {
@@ -103,7 +96,8 @@
 				F42A0E6A14862FA7008BD272 /* MainViewController.h */,
 				F42A0E6B14862FA7008BD272 /* MainViewController.m */,
 			);
-			path = Controllers;
+			name = Controllers;
+			path = "II2300-PRP/Controllers";
 			sourceTree = "<group>";
 		};
 		F42A0E6D14862FAE008BD272 /* Views */ = {
@@ -111,7 +105,8 @@
 			children = (
 				F42A0E6E14862FAE008BD272 /* MainViewController.xib */,
 			);
-			path = Views;
+			name = Views;
+			path = "II2300-PRP/Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
