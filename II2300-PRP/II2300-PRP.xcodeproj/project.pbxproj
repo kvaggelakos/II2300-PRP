@@ -14,6 +14,8 @@
 		2ED5313614855E8E00510423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313514855E8E00510423 /* main.m */; };
 		2ED5313A14855E8E00510423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313914855E8E00510423 /* AppDelegate.m */; };
 		2ED5314C14867A5E00510423 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5314B14867A5E00510423 /* settings.png */; };
+		2ED5315614868CEE00510423 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5315514868CEE00510423 /* SettingsViewController.xib */; };
+		2ED5315914868CFA00510423 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5315814868CFA00510423 /* SettingsViewController.m */; };
 		F42A0E6C14862FA7008BD272 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42A0E6B14862FA7008BD272 /* MainViewController.m */; };
 		F42A0E6F14862FAE008BD272 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42A0E6E14862FAE008BD272 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,9 @@
 		2ED5313814855E8E00510423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "II2300-PRP/AppDelegate.h"; sourceTree = "<group>"; };
 		2ED5313914855E8E00510423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "II2300-PRP/AppDelegate.m"; sourceTree = "<group>"; };
 		2ED5314B14867A5E00510423 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		2ED5315514868CEE00510423 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		2ED5315714868CFA00510423 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2ED5315814868CFA00510423 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		F42A0E6A14862FA7008BD272 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F42A0E6B14862FA7008BD272 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F42A0E6E14862FAE008BD272 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -105,6 +110,8 @@
 		F42A0E6914862FA7008BD272 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ED5315714868CFA00510423 /* SettingsViewController.h */,
+				2ED5315814868CFA00510423 /* SettingsViewController.m */,
 				F42A0E6A14862FA7008BD272 /* MainViewController.h */,
 				F42A0E6B14862FA7008BD272 /* MainViewController.m */,
 			);
@@ -115,6 +122,7 @@
 		F42A0E6D14862FAE008BD272 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2ED5315514868CEE00510423 /* SettingsViewController.xib */,
 				F42A0E6E14862FAE008BD272 /* MainViewController.xib */,
 			);
 			name = Views;
@@ -175,6 +183,7 @@
 				2ED5313414855E8E00510423 /* InfoPlist.strings in Resources */,
 				F42A0E6F14862FAE008BD272 /* MainViewController.xib in Resources */,
 				2ED5314C14867A5E00510423 /* settings.png in Resources */,
+				2ED5315614868CEE00510423 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +197,7 @@
 				2ED5313614855E8E00510423 /* main.m in Sources */,
 				2ED5313A14855E8E00510423 /* AppDelegate.m in Sources */,
 				F42A0E6C14862FA7008BD272 /* MainViewController.m in Sources */,
+				2ED5315914868CFA00510423 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

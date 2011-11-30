@@ -31,6 +31,14 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (IBAction)settingsButtonPressed:(id)sender
+{
+    UIViewController *settingsView = [[UIViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    UIWindow *window = [(AppDelegate *)[[UIApplication sharedApplication] delegate] window];
+    window.rootViewController = settingsView;
+}
+
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

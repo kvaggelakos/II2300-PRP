@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface MainViewController : UIViewController
+
+- (IBAction)settingsButtonPressed:(id)sender;
+
+
 
 @end
