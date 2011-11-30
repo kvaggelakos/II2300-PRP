@@ -13,6 +13,7 @@
 		2ED5313414855E8E00510423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5313214855E8E00510423 /* InfoPlist.strings */; };
 		2ED5313614855E8E00510423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313514855E8E00510423 /* main.m */; };
 		2ED5313A14855E8E00510423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313914855E8E00510423 /* AppDelegate.m */; };
+		2ED5314C14867A5E00510423 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5314B14867A5E00510423 /* settings.png */; };
 		F42A0E6C14862FA7008BD272 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42A0E6B14862FA7008BD272 /* MainViewController.m */; };
 		F42A0E6F14862FAE008BD272 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42A0E6E14862FAE008BD272 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		2ED5313714855E8E00510423 /* II2300-PRP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "II2300-PRP-Prefix.pch"; sourceTree = "<group>"; };
 		2ED5313814855E8E00510423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "II2300-PRP/AppDelegate.h"; sourceTree = "<group>"; };
 		2ED5313914855E8E00510423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "II2300-PRP/AppDelegate.m"; sourceTree = "<group>"; };
+		2ED5314B14867A5E00510423 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		F42A0E6A14862FA7008BD272 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F42A0E6B14862FA7008BD272 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F42A0E6E14862FAE008BD272 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				F42A0E6914862FA7008BD272 /* Controllers */,
 				F42A0E6D14862FAE008BD272 /* Views */,
 				2ED5313014855E8E00510423 /* Supporting Files */,
+				2ED5314A14867A5E00510423 /* Resources */,
 				2ED5312814855E8E00510423 /* Frameworks */,
 				2ED5312614855E8E00510423 /* Products */,
 			);
@@ -88,6 +91,15 @@
 			);
 			name = "Supporting Files";
 			path = "II2300-PRP";
+			sourceTree = "<group>";
+		};
+		2ED5314A14867A5E00510423 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2ED5314B14867A5E00510423 /* settings.png */,
+			);
+			name = Resources;
+			path = "II2300-PRP/Resources";
 			sourceTree = "<group>";
 		};
 		F42A0E6914862FA7008BD272 /* Controllers */ = {
@@ -162,6 +174,7 @@
 			files = (
 				2ED5313414855E8E00510423 /* InfoPlist.strings in Resources */,
 				F42A0E6F14862FAE008BD272 /* MainViewController.xib in Resources */,
+				2ED5314C14867A5E00510423 /* settings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
