@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 - (IBAction)settingsButtonPressed:(id)sender;
 
+@property (retain, nonatomic) IBOutlet UITableView *scheduleTableView;
+@property (retain, nonatomic) IBOutlet UILabel *clockLabel;
+- (IBAction)medicineTaken:(id)sender;
+- (IBAction)showFamilyPhotos:(id)sender;
 
 @end

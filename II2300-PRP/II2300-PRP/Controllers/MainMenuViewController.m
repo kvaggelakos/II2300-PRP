@@ -9,7 +9,11 @@
 #import "MainMenuViewController.h"
 #import "SettingsViewController.h"
 
+#define SCHEDULE_CELL_NAME @"SCHEDULE_CELL.xib"
+
 @implementation MainMenuViewController
+@synthesize scheduleTableView;
+@synthesize clockLabel;
 
 - (void)didReceiveMemoryWarning
 {
@@ -28,6 +32,8 @@
 
 - (void)viewDidUnload
 {
+    [self setScheduleTableView:nil];
+    [self setClockLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -64,4 +70,46 @@
     return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 
+- (void)dealloc {
+    [scheduleTableView release];
+    [clockLabel release];
+    [super dealloc];
+}
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource callback methods
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+    
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 0;
+    
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"cell");
+    static NSString *Identifier = @"ScheduleCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
+    
+    if (cell == nil) {
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:Identifier];
+        
+    }
+    
+    
+    return cell;
+}
+
+
+
+
+- (IBAction)medicineTaken:(id)sender {
+}
+
+- (IBAction)showFamilyPhotos:(id)sender {
+}
 @end
