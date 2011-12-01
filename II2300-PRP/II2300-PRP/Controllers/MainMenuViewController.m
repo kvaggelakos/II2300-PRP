@@ -7,6 +7,7 @@
 //
 
 #import "MainMenuViewController.h"
+#import "SettingsViewController.h"
 
 @implementation MainMenuViewController
 
@@ -33,9 +34,8 @@
 
 - (IBAction)settingsButtonPressed:(id)sender
 {
-    UIViewController *settingsView = [[UIViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
-    UIWindow *window = [(AppDelegate *)[[UIApplication sharedApplication] delegate] window];
-    window.rootViewController = settingsView;
+    SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    [self.navigationController pushViewController:settingsViewController animated:YES];
 }
 
 
@@ -61,8 +61,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return YES;
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 
 @end

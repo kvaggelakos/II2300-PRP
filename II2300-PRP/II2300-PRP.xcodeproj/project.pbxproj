@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2EBEBDA31487825E0096B808 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBEBDA21487825E0096B808 /* MainMenuViewController.m */; };
 		2EBEBDA5148782690096B808 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBEBDA4148782690096B808 /* MainMenuViewController.xib */; };
+		2EBEBDAC148788FD0096B808 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBEBDAB148788FD0096B808 /* MainView.xib */; };
 		2ED5312A14855E8E00510423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5312914855E8E00510423 /* UIKit.framework */; };
 		2ED5312C14855E8E00510423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5312B14855E8E00510423 /* Foundation.framework */; };
 		2ED5312E14855E8E00510423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5312D14855E8E00510423 /* CoreGraphics.framework */; };
@@ -24,6 +25,7 @@
 		2EBEBDA11487825E0096B808 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		2EBEBDA21487825E0096B808 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		2EBEBDA4148782690096B808 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		2EBEBDAB148788FD0096B808 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		2ED5312514855E8E00510423 /* II2300-PRP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "II2300-PRP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED5312914855E8E00510423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2ED5312B14855E8E00510423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +124,7 @@
 		F42A0E6D14862FAE008BD272 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2EBEBDAB148788FD0096B808 /* MainView.xib */,
 				2EBEBDA4148782690096B808 /* MainMenuViewController.xib */,
 				2ED5315514868CEE00510423 /* SettingsViewController.xib */,
 			);
@@ -184,6 +187,7 @@
 				2ED5314C14867A5E00510423 /* settings.png in Resources */,
 				2ED5315614868CEE00510423 /* SettingsViewController.xib in Resources */,
 				2EBEBDA5148782690096B808 /* MainMenuViewController.xib in Resources */,
+				2EBEBDAC148788FD0096B808 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
