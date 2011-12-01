@@ -6,9 +6,9 @@
 //  Copyright (c) 2011 fsefsef. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "MainMenuViewController.h"
 
-@implementation MainViewController
+@implementation MainMenuViewController
 
 - (void)didReceiveMemoryWarning
 {

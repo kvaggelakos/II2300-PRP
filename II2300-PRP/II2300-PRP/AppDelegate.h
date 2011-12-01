@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class MainViewController;
+@class MainMenuViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MainViewController *viewController;
+@property (strong, nonatomic) MainMenuViewController *viewController;
 
 @end

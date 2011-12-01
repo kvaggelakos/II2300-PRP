@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface MainViewController : UIViewController
+@interface MainMenuViewController : UIViewController
 
 - (IBAction)settingsButtonPressed:(id)sender;
 
