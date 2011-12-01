@@ -46,7 +46,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self configureSchedules];
+    
 }
 
 - (IBAction)cancelButtonPressed:(id)sender
@@ -85,6 +85,8 @@
     
     [loginRequest startAsynchronous];
     
+    // this should be invoked after getschedule query response is fetched successfully in -(void)getSchedules.
+    [self configureSchedules];
     
 }
 
