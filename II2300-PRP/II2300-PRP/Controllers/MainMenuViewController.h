@@ -15,6 +15,9 @@
 
 @property (retain, nonatomic) IBOutlet UITableView *scheduleTableView;
 @property (retain, nonatomic) IBOutlet UILabel *clockLabel;
+@property (retain, nonatomic) NSMutableArray *schedules;
+
+
 - (IBAction)medicineTaken:(id)sender;
 - (IBAction)showFamilyPhotos:(id)sender;
 

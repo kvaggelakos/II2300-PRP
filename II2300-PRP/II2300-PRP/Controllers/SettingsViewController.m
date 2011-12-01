@@ -7,10 +7,12 @@
 //
 
 #import "SettingsViewController.h"
+#import "MainMenuViewController.h"
 
 @interface SettingsViewController(Private)
 
 -(void)getSchedules;
+-(void)configureSchedules;
 
 @end
 
@@ -44,6 +46,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self configureSchedules];
 }
 
 - (IBAction)cancelButtonPressed:(id)sender
@@ -94,6 +97,11 @@
         
         NSString *response = scheduleQueryRequest.responseString;
         NSLog(@"response:%@",response);
+        NSError *error = nil;
+        id responseObject = [jsonParser objectWithString:response error:&error];
+        NSLog(@"responseObject:%@",responseObject);
+        
+        [self configureSchedules];
         
     }];
     
@@ -106,6 +114,27 @@
     [scheduleQueryRequest startAsynchronous];
 }
 
+-(void)configureSchedules{
+    
+    MainMenuViewController *mainMenuViewController = [self.navigationController.viewControllers objectAtIndex:0];
+    
+    [mainMenuViewController.schedules removeAllObjects];
+    
+    for (int i = 0; i < 4; i++) {
+        
+        NSString *medicineName = [NSString stringWithFormat:@"Medicine %d", i];
+        NSDate *timeToTake = [NSDate dateWithTimeIntervalSinceNow:(i * 1000)];
+        NSString *medicineDescription = [NSString stringWithFormat:@"This is the description for medicine %d", i];
+        NSDictionary *schedule = [NSDictionary dictionaryWithObjectsAndKeys:medicineName, @"medicineName", timeToTake, @"timeToTake", medicineDescription, @"medicineDescription", nil];
+        
+        [mainMenuViewController.schedules addObject:schedule];
+        
+    }
+    
+    [mainMenuViewController.scheduleTableView reloadData];
+    
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -115,7 +144,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 
 @end

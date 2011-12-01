@@ -14,6 +14,21 @@
 @implementation MainMenuViewController
 @synthesize scheduleTableView;
 @synthesize clockLabel;
+@synthesize schedules;
+
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    
+    self = [super initWithCoder:aDecoder];
+    
+    if (self != nil) {
+    
+        self.schedules = [NSMutableArray array];
+    
+    }
+    
+    return self;
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -85,7 +100,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 0;
+    return self.schedules.count;
     
 }
 
@@ -99,7 +114,16 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:Identifier];
         
     }
+
+    NSDictionary *schedule = [self.schedules objectAtIndex:indexPath.row];
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterShortStyle];
+    [formatter setTimeStyle:NSDateFormatterMediumStyle];
+    
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@, TO BE TAKEN AT:%@", [schedule objectForKey:@"medicineName"], [formatter stringFromDate:[schedule objectForKey:@"timeToTake"]]];
+    cell.detailTextLabel.text = [schedule objectForKey:@"medicineDescription"];
     
     return cell;
 }
