@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import "JSON.h"
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController{
+    
+    SBJSON *jsonParser;
+    
+}
+
+@property (nonatomic, copy) NSString *token;
 
 - (IBAction)cancelButtonPressed:(id)sender;
 
+- (IBAction)login:(id)sender;
 
 @end
