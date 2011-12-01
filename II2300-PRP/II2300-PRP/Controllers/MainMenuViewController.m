@@ -23,6 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"myPills - Pillbox";
 }
 
 - (void)viewDidUnload
@@ -37,7 +38,6 @@
     SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
     [self.navigationController pushViewController:settingsViewController animated:YES];
 }
-
 
 - (void)viewWillAppear:(BOOL)animated
 {

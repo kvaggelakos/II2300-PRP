@@ -35,6 +35,12 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (IBAction)cancelButtonPressed:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -44,7 +50,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    [[UIApplication sharedApplication] setStatusBarOrientation: UIInterfaceOrientationLandscapeRight];
 	return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 

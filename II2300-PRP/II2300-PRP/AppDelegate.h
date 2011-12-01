@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class MainMenuViewController;
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) IBOutlet UIWindow *window;
+@property (retain, nonatomic) IBOutlet UIWindow *window;
 @property (retain, nonatomic) IBOutlet UINavigationController *navigationController;
 
 @end

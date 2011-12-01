@@ -10,4 +10,7 @@
 
 @interface SettingsViewController : UIViewController
 
+- (IBAction)cancelButtonPressed:(id)sender;
+
+
 @end
