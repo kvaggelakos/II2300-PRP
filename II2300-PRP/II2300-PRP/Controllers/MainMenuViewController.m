@@ -15,19 +15,14 @@
 @synthesize scheduleTableView;
 @synthesize clockLabel;
 @synthesize schedules;
+@synthesize tableCell;
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
-    
     self = [super initWithCoder:aDecoder];
-    
     if (self != nil) {
-    
         self.schedules = [NSMutableArray array];
-    
     }
-    
     return self;
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -99,32 +94,32 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
     return self.schedules.count;
     
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"cell");
-    static NSString *Identifier = @"ScheduleCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
-    
-    if (cell == nil) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:Identifier];
-        
-    }
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)
+    indexPath{
 
+    static NSString *MyIdentifier = @"tableCellView";
+	
     NSDictionary *schedule = [self.schedules objectAtIndex:indexPath.row];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterShortStyle];
     [formatter setTimeStyle:NSDateFormatterMediumStyle];
     
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@, TO BE TAKEN AT:%@", [schedule objectForKey:@"medicineName"], [formatter stringFromDate:[schedule objectForKey:@"timeToTake"]]];
-    cell.detailTextLabel.text = [schedule objectForKey:@"medicineDescription"];
-    
+	TableCellView *cell = (TableCellView *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+	if(cell == nil) {
+		[[NSBundle mainBundle] loadNibNamed:@"TableCellView" owner:self options:nil];
+		cell = tableCell;
+	}
+	
+	//[cell setLabelText: [NSString stringWithFormat:@"%@, TO BE TAKEN AT:%@", [schedule objectForKey:@"medicineName"], [formatter stringFromDate:[schedule objectForKey:@"timeToTake"]]]];
+    //[cell setDescriptiveText:[schedule objectForKey:@"medicineDescription"]];
+	
+    [cell setLabelText:@"Main"];
+    [cell setDescriptiveText:@"Description"];
     return cell;
 }
 

@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "ASIHTTPRequest.h"
+#import "TableCellView.h"
 
 @interface MainMenuViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+{
+}
 
 - (IBAction)settingsButtonPressed:(id)sender;
 
 @property (retain, nonatomic) IBOutlet UITableView *scheduleTableView;
 @property (retain, nonatomic) IBOutlet UILabel *clockLabel;
+@property (retain, nonatomic) IBOutlet TableCellView *tableCell;
 @property (retain, nonatomic) NSMutableArray *schedules;
 
 
