@@ -88,14 +88,11 @@
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource callback methods
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
     return 1;
-    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.schedules.count;
-    
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)
@@ -115,11 +112,9 @@
 		cell = tableCell;
 	}
 	
-	//[cell setLabelText: [NSString stringWithFormat:@"%@, TO BE TAKEN AT:%@", [schedule objectForKey:@"medicineName"], [formatter stringFromDate:[schedule objectForKey:@"timeToTake"]]]];
-    //[cell setDescriptiveText:[schedule objectForKey:@"medicineDescription"]];
+	[cell setLabelText: [schedule objectForKey:@"medicineName"]];
+    [cell setDescriptiveText:[NSString stringWithFormat:@"TO BE TAKEN AT:%@", [formatter stringFromDate:[schedule objectForKey:@"timeToTake"]]]];
 	
-    [cell setLabelText:@"Main"];
-    [cell setDescriptiveText:@"Description"];
     return cell;
 }
 

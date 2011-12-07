@@ -9,17 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "ASIHTTPRequest.h"
 #import "JSON.h"
+#import "MBProgressHUD.h"
+
 
 @interface SettingsViewController : UIViewController{
-    
     SBJSON *jsonParser;
-    
+    MBProgressHUD *hud;
+    NSString *token;
+    IBOutlet UILabel *statusTxt;
 }
 
 @property (nonatomic, copy) NSString *token;
 
 - (IBAction)cancelButtonPressed:(id)sender;
-
 - (IBAction)login:(id)sender;
 
 @end

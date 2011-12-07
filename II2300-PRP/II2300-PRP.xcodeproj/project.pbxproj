@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2C7E23148FB74F00069872 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C7E22148FB74F00069872 /* MBProgressHUD.m */; };
 		2EB3D285148E7554008F2D33 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB3D25D148E7554008F2D33 /* ASIAuthenticationDialog.m */; };
 		2EB3D286148E7554008F2D33 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB3D260148E7554008F2D33 /* ASIDataCompressor.m */; };
 		2EB3D287148E7554008F2D33 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB3D262148E7554008F2D33 /* ASIDataDecompressor.m */; };
@@ -46,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2C7E21148FB74F00069872 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2E2C7E22148FB74F00069872 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2EB3D25C148E7554008F2D33 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		2EB3D25D148E7554008F2D33 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		2EB3D25E148E7554008F2D33 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2C7E20148FB74F00069872 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C7E21148FB74F00069872 /* MBProgressHUD.h */,
+				2E2C7E22148FB74F00069872 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = "II2300-PRP/MBProgressHUD";
+			sourceTree = "<group>";
+		};
 		2EB3D25B148E7554008F2D33 /* ASIHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,11 +226,12 @@
 				2ED5313914855E8E00510423 /* AppDelegate.m */,
 				F42A0E6914862FA7008BD272 /* Controllers */,
 				F42A0E6D14862FAE008BD272 /* Views */,
+				2ED5314A14867A5E00510423 /* Resources */,
+				2E2C7E20148FB74F00069872 /* MBProgressHUD */,
 				2EB3D25B148E7554008F2D33 /* ASIHTTPRequest */,
 				2EB3D274148E7554008F2D33 /* JSON */,
 				2EB3D282148E7554008F2D33 /* Reachability */,
 				2ED5313014855E8E00510423 /* Supporting Files */,
-				2ED5314A14867A5E00510423 /* Resources */,
 				2ED5312814855E8E00510423 /* Frameworks */,
 				2ED5312614855E8E00510423 /* Products */,
 			);
@@ -379,6 +393,7 @@
 				2EB3D294148E7554008F2D33 /* SBJsonWriter.m in Sources */,
 				2EB3D295148E7554008F2D33 /* Reachability.m in Sources */,
 				2EB3D29F148E75DB008F2D33 /* TableCellView.m in Sources */,
+				2E2C7E23148FB74F00069872 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

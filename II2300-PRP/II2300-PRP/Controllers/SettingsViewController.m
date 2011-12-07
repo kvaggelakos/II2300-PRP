@@ -36,7 +36,6 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -49,49 +48,72 @@
     
 }
 
+- (void)dealloc {
+    [jsonParser release];
+    [hud release];
+    [token release];
+    [super dealloc];
+}
+
+#pragma mark - Action handlers
+
 - (IBAction)cancelButtonPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)login:(id)sender {
-    
+- (IBAction)login:(id)sender 
+{    
     NSURL *loginURL = [NSURL URLWithString:@"http://91.123.201.165:10000/login"];
     ASIHTTPRequest *loginRequest = [ASIHTTPRequest requestWithURL:loginURL];
+    
+    // Show a loading screen til we get response
+    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Trying to login";
+    
     [loginRequest setCompletionBlock:^{
+        [hud hide:YES];
         
         NSString *response = loginRequest.responseString;
-        NSLog(@"response:%@",response);
+        NSLog(@"[LOGIN] Response from server: %@", response);
+        
         NSError *error = nil;
         id responseObject = [jsonParser objectWithString:response error:&error];
         if (error) {
-            
             NSLog(@"error parsing json object:%@",[error localizedDescription]);
-        
         }
         
-        self.token = [responseObject objectForKey:@"token"];
-        NSLog(@"self.token = %@",token);
+        token = [NSString stringWithFormat:@"%d", [responseObject objectForKey:@"token"]];
+        NSLog(@"[LOGIN] Token received by server: %@", token);
+        
+        if ([token length] == 0) {
+            NSLog(@"[LOGIN] Login did not receive any token, user not authenticated");
+            [statusTxt setText:@"Login unsucessful"];
+        } else {
+            NSLog(@"[LOGIN] Login sucessful!");
+            [statusTxt setText:@"Login sucessful!"];
+        }
+        
         [self getSchedules];
-    
     }];
     
     
     [loginRequest setFailedBlock:^{
-        
-        NSLog(@"fail to get login response");
-        
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        NSLog(@"[LOGIN] Failed to get login response");
+        [statusTxt setText:@"Couldn't connect to the server!"];
     }];
     
     [loginRequest startAsynchronous];
     
-    // this should be invoked after getschedule query response is fetched successfully in -(void)getSchedules.
     [self configureSchedules];
-    
 }
 
--(void)getSchedules{
-    
+
+#pragma mark - Function for fetching data
+
+-(void)getSchedules
+{    
     NSURL *scheduleQueryURL = [NSURL URLWithString:@"http://91.123.201.165:10000/getSchedule"];
     ASIHTTPRequest *scheduleQueryRequest = [ASIHTTPRequest requestWithURL:scheduleQueryURL];
     
@@ -108,16 +130,14 @@
     }];
     
     [scheduleQueryRequest setFailedBlock:^{
-        
         NSLog(@"failed to get schedules");
-        
     }];
     
     [scheduleQueryRequest startAsynchronous];
 }
 
--(void)configureSchedules{
-    
+-(void)configureSchedules
+{    
     MainMenuViewController *mainMenuViewController = [self.navigationController.viewControllers objectAtIndex:0];
     
     [mainMenuViewController.schedules removeAllObjects];
