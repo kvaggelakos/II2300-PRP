@@ -12,7 +12,7 @@
 #import "MBProgressHUD.h"
 
 
-@interface SettingsViewController : UIViewController{
+@interface SettingsViewController : UIViewController {
     SBJSON *jsonParser;
     MBProgressHUD *hud;
     NSString *token;
@@ -23,5 +23,5 @@
 
 - (IBAction)cancelButtonPressed:(id)sender;
 - (IBAction)login:(id)sender;
-
+- (IBAction)editEnd:(id)sender;
 @end

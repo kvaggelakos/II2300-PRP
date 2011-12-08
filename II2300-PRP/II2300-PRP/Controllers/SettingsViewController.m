@@ -109,6 +109,10 @@
     [self configureSchedules];
 }
 
+- (IBAction)editEnd:(id)sender 
+{
+    [sender resignFirstResponder];
+}
 
 #pragma mark - Function for fetching data
 

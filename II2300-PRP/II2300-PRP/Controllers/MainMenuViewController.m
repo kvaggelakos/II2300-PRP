@@ -122,6 +122,8 @@
 
 
 - (IBAction)medicineTaken:(id)sender {
+    [schedules removeObjectAtIndex:0]; // remove the first object (top of the list)
+    [scheduleTableView reloadData];
 }
 
 - (IBAction)showFamilyPhotos:(id)sender {
