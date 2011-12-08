@@ -39,6 +39,10 @@
 		2ED5313A14855E8E00510423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5313914855E8E00510423 /* AppDelegate.m */; };
 		2ED5314C14867A5E00510423 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5314B14867A5E00510423 /* settings.png */; };
 		2ED5315914868CFA00510423 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5315814868CFA00510423 /* SettingsViewController.m */; };
+		2EF00D121490F37B006B2B27 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF00D101490F37B006B2B27 /* PhotoViewController.m */; };
+		2EF00D161490F39F006B2B27 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF00D151490F39F006B2B27 /* PhotoViewController.xib */; };
+		2EF00D1A1490F7C9006B2B27 /* pic_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EF00D181490F7C9006B2B27 /* pic_1.gif */; };
+		2EF00D1B1490F7C9006B2B27 /* pic_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF00D191490F7C9006B2B27 /* pic_2.jpg */; };
 		3F96C8681487ED3E00514A15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F96C8671487ED3E00514A15 /* libz.dylib */; };
 		3F96C86A1487ED4A00514A15 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F96C8691487ED4A00514A15 /* CoreFoundation.framework */; };
 		3F96C86C1487ED5200514A15 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F96C86B1487ED5200514A15 /* CFNetwork.framework */; };
@@ -109,6 +113,11 @@
 		2ED5314B14867A5E00510423 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		2ED5315714868CFA00510423 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		2ED5315814868CFA00510423 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2EF00D0F1490F37B006B2B27 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		2EF00D101490F37B006B2B27 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		2EF00D151490F39F006B2B27 /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		2EF00D181490F7C9006B2B27 /* pic_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pic_1.gif; sourceTree = "<group>"; };
+		2EF00D191490F7C9006B2B27 /* pic_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic_2.jpg; sourceTree = "<group>"; };
 		3F96C8671487ED3E00514A15 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3F96C8691487ED4A00514A15 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3F96C86B1487ED5200514A15 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -211,6 +220,7 @@
 		2EB3D296148E7575008F2D33 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				2EF00D151490F39F006B2B27 /* PhotoViewController.xib */,
 				2EB3D297148E7575008F2D33 /* MainMenuViewController.xib */,
 				2EB3D298148E7575008F2D33 /* MainView.xib */,
 				2EB3D299148E7575008F2D33 /* SettingsViewController.xib */,
@@ -275,10 +285,20 @@
 		2ED5314A14867A5E00510423 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2EF00D171490F7C9006B2B27 /* ExamplePics */,
 				2ED5314B14867A5E00510423 /* settings.png */,
 			);
 			name = Resources;
 			path = "II2300-PRP/Resources";
+			sourceTree = "<group>";
+		};
+		2EF00D171490F7C9006B2B27 /* ExamplePics */ = {
+			isa = PBXGroup;
+			children = (
+				2EF00D181490F7C9006B2B27 /* pic_1.gif */,
+				2EF00D191490F7C9006B2B27 /* pic_2.jpg */,
+			);
+			path = ExamplePics;
 			sourceTree = "<group>";
 		};
 		F42A0E6914862FA7008BD272 /* Controllers */ = {
@@ -288,6 +308,8 @@
 				2EBEBDA21487825E0096B808 /* MainMenuViewController.m */,
 				2ED5315714868CFA00510423 /* SettingsViewController.h */,
 				2ED5315814868CFA00510423 /* SettingsViewController.m */,
+				2EF00D0F1490F37B006B2B27 /* PhotoViewController.h */,
+				2EF00D101490F37B006B2B27 /* PhotoViewController.m */,
 			);
 			name = Controllers;
 			path = "II2300-PRP/Controllers";
@@ -361,6 +383,9 @@
 				2EB3D29B148E7575008F2D33 /* MainView.xib in Resources */,
 				2EB3D29C148E7575008F2D33 /* SettingsViewController.xib in Resources */,
 				2EB3D2A5148E789D008F2D33 /* TableCellView.xib in Resources */,
+				2EF00D161490F39F006B2B27 /* PhotoViewController.xib in Resources */,
+				2EF00D1A1490F7C9006B2B27 /* pic_1.gif in Resources */,
+				2EF00D1B1490F7C9006B2B27 /* pic_2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +419,7 @@
 				2EB3D295148E7554008F2D33 /* Reachability.m in Sources */,
 				2EB3D29F148E75DB008F2D33 /* TableCellView.m in Sources */,
 				2E2C7E23148FB74F00069872 /* MBProgressHUD.m in Sources */,
+				2EF00D121490F37B006B2B27 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

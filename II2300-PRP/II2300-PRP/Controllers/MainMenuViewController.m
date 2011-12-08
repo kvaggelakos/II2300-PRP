@@ -8,6 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "SettingsViewController.h"
+#import "PhotoViewController.h"
 
 #define SCHEDULE_CELL_NAME @"SCHEDULE_CELL.xib"
 
@@ -47,12 +48,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
-- (IBAction)settingsButtonPressed:(id)sender
-{
-    SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
-    [self.navigationController pushViewController:settingsViewController animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -118,14 +113,22 @@
     return cell;
 }
 
-
-
+- (IBAction)settingsButtonPressed:(id)sender
+{
+    SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    [self.navigationController pushViewController:settingsViewController animated:YES];
+    [settingsViewController release];
+}
 
 - (IBAction)medicineTaken:(id)sender {
     [schedules removeObjectAtIndex:0]; // remove the first object (top of the list)
     [scheduleTableView reloadData];
 }
 
-- (IBAction)showFamilyPhotos:(id)sender {
+- (IBAction)showFamilyPhotos:(id)sender 
+{
+    PhotoViewController *photoViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+    [self.navigationController pushViewController:photoViewController animated:YES];
+    [photoViewController release];
 }
 @end

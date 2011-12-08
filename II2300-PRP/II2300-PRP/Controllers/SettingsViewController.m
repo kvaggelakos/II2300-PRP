@@ -92,6 +92,8 @@
         } else {
             NSLog(@"[LOGIN] Login sucessful!");
             [statusTxt setText:@"Login sucessful!"];
+            [NSThread sleepForTimeInterval:1];
+            [self.navigationController popViewControllerAnimated:YES];
         }
         
         [self getSchedules];
